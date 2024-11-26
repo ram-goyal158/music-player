@@ -1,0 +1,130 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  /* Music Player Container */
+  .music-player-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .music-player-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Playlist */
+  .playlist ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .playlist ul li {
+    padding: 10px;
+    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .playlist ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .playlist ul li:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Audio Controls */
+  .audio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .control-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .control-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  .volume-slider {
+    appearance: none;
+    width: 150px;
+    height: 5px;
+    background: #333;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .volume-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #ff6f61;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .volume-slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #ff6f61;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  
+  .progress {
+    width: 50%; /* Static width, can be adjusted dynamically */
+    height: 100%;
+    background: #ff6f61;
+    transition: width 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .volume-slider {
+      width: 100px;
+    }
+  }
+  
